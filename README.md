@@ -6,13 +6,13 @@
 npm install
 ```
 
-* Cuando termine de instalar ejecutar el siguiente comando
+* Cuando termine de instalar ejecutar el siguiente comando para transpilar el codigo
 
 ```
-tsc -w
+tsc
 ```
 
-* Para que funcione
+* Para ejecutar
 
 ```
 cd build
