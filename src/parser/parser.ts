@@ -9,7 +9,7 @@ export const urlToObj = (baseUrl: string, realUrl: string): object => {
   const indexes = arrBaseUrl
     .map((param, i) => (param.includes(':') === true ? i : -1))
     .filter(index => index !== -1);
-  const arrParams = indexes.map(index => arrBaseUrl[index]);  
+  const arrParams = indexes.map(index => arrBaseUrl[index]);
   const arrParams2 = arrParams.map(param => param.replace(':', ''));
   const arrValues = indexes.map(index => arrRealUrl[index]);
   const objSearchParams = Object.fromEntries(parsedRealUrl.searchParams);
